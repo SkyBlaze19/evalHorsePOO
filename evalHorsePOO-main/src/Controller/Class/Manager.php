@@ -26,7 +26,7 @@ class Manager extends Human
 
     public function __toString(): string
     {
-        return "Le manager s'appelle {$this->name} et il a {$this->age}\n";   
+        return "Le manager s'appelle {$this->name} et il a {$this->age} ans\n";   
     }
 
     /**
