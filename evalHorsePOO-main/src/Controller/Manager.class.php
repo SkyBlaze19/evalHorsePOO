@@ -31,7 +31,7 @@ class Manager
      */ 
     private function setName($Name): self
     {
-        $this->Name = $Name;
+        $this->Name = strtoupper($Name);
 
         return $this;
     }
