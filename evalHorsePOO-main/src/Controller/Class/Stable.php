@@ -13,8 +13,8 @@ class Stable
     private string $City;
     private Manager $Manager;
     //To do : propriété manager (objet)
-
-
+    
+    
     // Constructeur
     public function __construct
     (
@@ -23,7 +23,7 @@ class Stable
         string $Street = self::ANONYME,
         string $PostCode = self::ANONYME,
         string $City = self::ANONYME,
-    )
+        )
     {
         $this->setName($Name)
             ->setAdress($Adress)
@@ -31,6 +31,18 @@ class Stable
             ->setPostCode($PostCode)
             ->setCity($City);
     }
+    
+    public function __toString(): string
+    {
+        $str = "Voici l'écurie :{$this->Name}\n";
+        $str .= "Elle se trouve à l'adresse suivant :\n";
+        $str .= "Numéro de rue :{$this->Adress}\n";
+        $str .= "Nom de la rue :{$this->Street}\n";
+        $str .= "Code Postal :{$this->PostCode}\n";
+        $str .= "A :{$this->City}\n\n";
+        return $str;
+    }
+
 
     /**
      * Get the value of Name
@@ -132,14 +144,4 @@ class Stable
         return $this;
     }
 
-    public function __toString(): string
-    {
-        $str = "Voici l'écurie :{$this->Name}\n";
-        $str .= "Elle se trouve à l'adresse suivant :\n";
-        $str .= "Numéro de rue :{$this->Adress}\n";
-        $str = "Nom de la rue :{$this->Street}\n";
-        $str = "Code Postal :{$this->PostCode}\n";
-        $str = "A :{$this->City}\n\n";
-        return $str;
-    }
 }

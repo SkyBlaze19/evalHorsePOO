@@ -14,5 +14,5 @@ $EcurieBeaute = new Stable("Ecurie Beaute Fleury", "19", "Rue des ardennes", "14
 
 //echo $MonHumain;
 echo $MonHumainManager;
-echo "\n\nLe manager :\n" . $Manager1;
+echo "\n\n" . $Manager1;
 echo "\n\nL'écurie :\n" . $EcurieBeaute;
