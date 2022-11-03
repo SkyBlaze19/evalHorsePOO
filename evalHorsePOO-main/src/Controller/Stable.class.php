@@ -3,7 +3,7 @@
 class Stable
 {
     // Propriétés 
-    protected const ANONYME = "Inconnu";
+    private const ANONYME = "Inconnu";
 
     private string $Name;
     private string $Adress;
