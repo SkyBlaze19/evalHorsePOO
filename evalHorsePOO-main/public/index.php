@@ -1,8 +1,9 @@
 <?php
 
-use App\Controller\Human;
-use App\Controller\Manager;
-use App\Controller\Stable;
+use App\Controller\Class\Human;
+use App\Controller\Class\Manager;
+use App\Controller\Class\Stable;
+
 
 require_once __DIR__ . "/../src/app.php";
 
