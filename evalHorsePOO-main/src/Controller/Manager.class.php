@@ -3,61 +3,47 @@
 class Manager extends Human
 {
     // Propriétés 
-    private const ANONYME = "Inconnu";
-
-    private string $Name;
-    private int $Age;
+    /*private string $secteur;*/ // 
+    private string $domaine; // (Ecurie, Animaux, Rider, ...)
 
     // Constructeur
 
-    public function __construct(string $Name = self::ANONYME, int $Age = 30)
+    public function __construct
+    (
+        string $name = parent::ANONYME,
+        int $age = parent:: AGE_INCONNU,
+        string $adress,
+        string $postCode,
+        string $street,
+        string $city,
+        string $domaine
+    )
     {
-        $this->setName($Name)
-            ->setAge($Age);
-    }
-
-    /**
-     * Get the value of Name
-     */ 
-    public function getName(): string
-    {
-        return $this->Name;
-    }
-
-    /**
-     * Set the value of Name
-     *
-     * @return  self
-     */ 
-    private function setName($Name): self
-    {
-        $this->Name = strtoupper($Name);
-
-        return $this;
-    }
-
-    /**
-     * Get the value of Age
-     */ 
-    public function getAge(): int
-    {
-        return $this->Age;
-    }
-
-    /**
-     * Set the value of Age
-     *
-     * @return  self
-     */ 
-    private function setAge($Age): self
-    {
-        $this->Age = $Age;
-
-        return $this;
+        parent::__construct($name, $age, $street, $postCode, $city);
+        $this->setDomaine($domaine);
     }
 
     public function __toString(): string
     {
-        return "Le manager s'appelle {$this->Name} et il à {$this->Age}\n";   
+        return "Le manager s'appelle {$this->name} et il a {$this->age}\n";   
+    }
+
+    /**
+     * Get the value of domaine
+     */ 
+    public function getDomaine(): string
+    {
+        return $this->domaine;
+    }
+
+    /**
+     * Set the value of domaine
+     *
+     * @return  self
+     */ 
+    private function setDomaine($domaine): self
+    {
+        $this->domaine = $domaine;
+        return $this;
     }
 }
