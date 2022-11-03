@@ -3,8 +3,8 @@
 abstract class Human
 {   
     // Propriétés
-    private const ANONYME = "Inconnu";
-    private const AGE_INCONNU = 0;    
+    protected const ANONYME = "Inconnu";
+    protected const AGE_INCONNU = 0;    
 
     private string $name;
     private int $age;

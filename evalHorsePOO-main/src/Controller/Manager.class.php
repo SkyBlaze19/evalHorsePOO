@@ -1,6 +1,6 @@
 <?php
 
-class Manager
+class Manager extends Human
 {
     // Propriétés 
     private const ANONYME = "Inconnu";
