@@ -23,6 +23,7 @@ abstract class Human
     (
         string $name = self::ANONYME,
         int $age = self:: AGE_INCONNU,
+        string $adress,
         string $street,
         string $postCode,
         string $city
@@ -30,6 +31,7 @@ abstract class Human
     {
         $this->setName($name)
             ->setAge($age)
+            ->setAdress($adress)
             ->setStreet($street)
             ->setPostCode($postCode)
             ->setCity($city);
@@ -86,7 +88,7 @@ abstract class Human
     /**
      * Get the value of adress
      */ 
-    public function getAdress()
+    public function getAdress(): string
     {
         return $this->adress;
     }
@@ -96,7 +98,7 @@ abstract class Human
      *
      * @return  self
      */ 
-    public function setAdress($adress)
+    private function setAdress($adress): self
     {
         $this->adress = $adress;
 

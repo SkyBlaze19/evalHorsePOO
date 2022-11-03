@@ -13,13 +13,13 @@ class Manager extends Human
         string $name = parent::ANONYME,
         int $age = parent:: AGE_INCONNU,
         string $adress,
-        string $postCode,
         string $street,
+        string $postCode,
         string $city,
         string $domaine
     )
     {
-        parent::__construct($name, $age, $street, $postCode, $city);
+        parent::__construct($name, $age, $adress, $street, $postCode, $city);
         $this->setDomaine($domaine);
     }
 
