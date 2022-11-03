@@ -1,5 +1,9 @@
 <?php
 
+use App\Controller\Human;
+use App\Controller\Manager;
+use App\Controller\Stable;
+
 require_once __DIR__ . "/../src/app.php";
 
 $MonHumain = new Human("Théo", 21, "7", "chemin des quairières", "14763", "Bamervor");
