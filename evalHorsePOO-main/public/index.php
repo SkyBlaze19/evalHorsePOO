@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . "../src/app.php";
+require_once __DIR__ . "/../src/app.php";
 
 $MonHumain = new Human("Théo", 21, "7", "chemin des quairières", "14763", "Bamervor");
 $Manager1 = new Manager("Claire", 36, "3", "Impasse du puits", "76500", "Honyeux", "Animaux");
