@@ -7,12 +7,12 @@ abstract class Human
     protected const ANONYME = "Inconnu";
     protected const AGE_INCONNU = 0;    
 
-    private string $name;
-    private int $age;
-    private string $adress;
-    private string $street;
-    private string $postCode;
-    private string $city;
+    protected string $name;
+    protected int $age;
+    protected string $adress;
+    protected string $street;
+    protected string $postCode;
+    protected string $city;
     //private Category $Categorie; //TODO
     /*
     private float $height;
