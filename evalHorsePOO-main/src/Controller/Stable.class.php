@@ -10,9 +10,9 @@ class Stable
     private string $Street;
     private string $PostCode;
     private string $City;
-
+    private Manager $Manager;
     //To do : propriété manager (objet)
-    //private string $Manager;
+
 
     // Constructeur
     public function __construct
