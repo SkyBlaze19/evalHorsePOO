@@ -5,6 +5,9 @@ use App\Controller\Class\Manager;
 use App\Controller\Class\Stable;
 use App\Controller\Class\Animal;
 use App\Controller\Class\Equine;
+use App\Controller\Class\Shetland;
+use App\Controller\Class\Horse;
+use App\Controller\Class\Poney;
 
 
 require_once __DIR__ . "/../src/app.php";
