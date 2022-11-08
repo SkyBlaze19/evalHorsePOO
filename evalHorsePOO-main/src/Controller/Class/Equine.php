@@ -44,7 +44,6 @@ abstract class Equine extends Animal
         $str = "Cet equidé est un : {$this->getCategory()}\n";
         $str .= "C'est le numéro : {substr($this->id, -1)}\n";
         $str .= "Il a besoin de {$this->water} L d'eau\n";
-        $str .= "Il a besoin de {$this->water} L d'eau\n";
         /* Dès que Rider sera créer (A ajuster si besoin)
         if($Rider != null)
             $str.= "Il possède un rider qui est : {$this->getRider()}\n";
