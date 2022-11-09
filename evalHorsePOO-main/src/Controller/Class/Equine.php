@@ -22,11 +22,7 @@ abstract class Equine extends Animal
             ->setWater($water);
     }
 
-    public function idGenerator()
-    {
-        return '000-' . substr($this->getName(), 0, 1) . "-" . substr($this->getColor(), 0, 1) . "-" . count($this->getEquines())."\n";
-    }
-
+    
     /*
     public function setCategory(string $var = null)
     {
@@ -55,9 +51,9 @@ abstract class Equine extends Animal
             $str.= "Il possède un rider qui est : {$this->getRider()}\n";
         else
             $str.= "Il ne possède pas de rider\n";
-        */
-        return $str;
-    }
+            */
+            return $str;
+        }
 
     public function getEquines()
     {
@@ -71,7 +67,7 @@ abstract class Equine extends Animal
     {
         return $this->id;
     }
-
+    
     /**
      * Set the value of id
      *
@@ -80,10 +76,10 @@ abstract class Equine extends Animal
     private function setId($id): self
     {
         $this->id = $id;
-
+        
         return $this;
     }
-
+    
     /**
      * Get the value of color
      */ 
@@ -100,10 +96,15 @@ abstract class Equine extends Animal
     private function setColor($color): self
     {
         $this->color = $color;
-
+        
         return $this;
     }
-
+    
+    public function idGenerator()
+    {
+        return '000-' . substr($this->getName(), 0, 1) . "-" . substr($this->getColor(), 0, 1) . "-" . count($this->getEquines())."\n";
+    }
+    
     /**
      * Get the value of water
      */ 
