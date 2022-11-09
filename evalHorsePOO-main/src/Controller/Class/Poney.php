@@ -8,9 +8,9 @@ class Poney extends Equine
     // Propriétaire ? // A définir si utile ou non
 
     // Constructeur
-    public function __construct(int $age, $name, $sexe, $id, $water)
+    public function __construct(int $age, $name, $sexe, $id, $color, $water)
     {
-        parent::__construct($name, $sexe, $id, $water);
+        parent::__construct($name, $sexe, $id, $color, $water);
         $this->setNom($age);
     }
 
