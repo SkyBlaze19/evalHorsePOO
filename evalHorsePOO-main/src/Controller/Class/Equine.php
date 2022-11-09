@@ -102,7 +102,7 @@ abstract class Equine extends Animal
     
     public function idGenerator()
     {
-        return '000-' . substr($this->getName(), 0, 1) . "-" . substr($this->getColor(), 0, 1) . "-" . count($this->getEquines())."\n";
+        return '000-' . substr($this->getName(), 0, 1) . "-" . substr($this->getColor(), 0, 1) . "-" . count($this->getEquines());
     }
     
     /**
