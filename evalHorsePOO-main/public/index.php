@@ -37,5 +37,7 @@ echo "\n\n".$georgeShetland;
 echo "\n\n".$camillePoney;
 echo "\n\n".$jeanHorse;
 
+//$Rider = new Rider()
+
 
 
