@@ -26,4 +26,10 @@ $georgeShetland = new Shetland(5, "Georges", "male", "e", 50);
 $camillePoney = new Poney(0, "Camille", "femelle", "c", 70);
 $jeanHorse = new Horse(1, "Jean", "male", "a", 90);
 
+echo "\n\n".$georgeShetland;
+/*
+echo "\n\n".$camillePoney;
+echo "\n\n".$jeanHorse;
+*/
+
 
