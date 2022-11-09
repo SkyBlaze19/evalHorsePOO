@@ -5,11 +5,13 @@ abstract class Animal
 {
     // Propriétés
     protected string $name;
+    protected string $sexe;
 
     // Constructeur
-    public function __construct(string $name = "Inconnu")
+    public function __construct(string $name = "Inconnu", string $sexe = "Inconnu")
     {
-        $this->setName($name);
+        $this->setName($name)
+            ->setSexe($sexe);
     }
 
 
@@ -29,6 +31,26 @@ abstract class Animal
     private function setName($name): self 
     {
         $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of sexe
+     */ 
+    public function getSexe(): string
+    {
+        return $this->sexe;
+    }
+
+    /**
+     * Set the value of sexe
+     *
+     * @return  self
+     */ 
+    private function setSexe($sexe): self
+    {
+        $this->sexe = $sexe;
 
         return $this;
     }
