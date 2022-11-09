@@ -26,6 +26,7 @@ abstract class Equine extends Animal
         return '000-' . substr($this->getName(), 0, 1) . "-" . substr($this->getColor(), 0, 1) . "-" . count($this->getEquines())."\n";
     }
 
+    /*
     public function setCategory(string $var = null)
     {
         # code...
@@ -40,11 +41,12 @@ abstract class Equine extends Animal
     {
         # code...
     }
+    */
 
     public function __toString(): string
     {
-        $str = "Cet equidé est un : {$this->getCategory()}\n";
-        $str .= "C'est le numéro : {substr($this->id, -1)}\n";
+        //$str = "Cet equidé est un : {$this->getCategory()}\n";
+        $str = "C'est le numéro : {substr($this->id, -1)}\n";
         $str .= "Il a besoin de {$this->water} L d'eau\n";
         /* Dès que Rider sera créer (A ajuster si besoin)
         if($Rider != null)
