@@ -17,8 +17,8 @@ abstract class Equine extends Animal
     public function __construct($name, $sexe, string $id, string $color, int $water)
     {
         parent::__construct($name, $sexe);
-        $this->setId($this->idGenerator())
-            ->setColor($color)
+        $this->setColor($color)
+            ->setId($this->idGenerator())
             ->setWater($water);
     }
 
