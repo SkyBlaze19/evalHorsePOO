@@ -25,9 +25,10 @@ echo "\n\n" . $EcurieBeaute;
 // Possibilités de couleurs 
 // ['Alzan', 'Bai', 'Pie', 'Grey', 'White']
 
-$georgeShetland = new Shetland(5, "Georges", "male", "e", "Bai", 50);
-$camillePoney = new Poney(0, "Camille", "femelle", "c", "Alzan", 70);
-$jeanHorse = new Horse(1, "Jean", "male", "a", "Pie", 90);
+$georgeShetland = new Shetland(5, "Georges", "male", "Bai", 50);
+$camillePoney = new Poney(0, "Camille", "femelle", "Alzan", 70);
+$jeanHorse = new Horse(1, "Jean", "male", "Pie", 90);
+$patriciaShetland = new Shetland(1, "Patricia", "femelle", "Pie", 90);
 
 echo "\n\n".$georgeShetland;
 echo "\n\n".$camillePoney;
