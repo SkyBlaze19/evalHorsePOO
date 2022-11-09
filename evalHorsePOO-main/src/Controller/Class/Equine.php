@@ -1,9 +1,11 @@
 <?php
 namespace App\Controller\Class;
+use Error;
 
 abstract class Equine extends Animal
 {
     // Propriétés
+    const ROBES = array('Alzan', 'Bai', 'Pie', 'Grey', 'White');
 
     protected string $id;
     protected string $color;
@@ -22,7 +24,6 @@ abstract class Equine extends Animal
             ->setId($this->idGenerator())
             ->setWater($water);
             self::$mesEquides++;
-
     }
 
     
@@ -98,7 +99,10 @@ abstract class Equine extends Animal
      */ 
     private function setColor($color): self
     {
-        $this->color = $color;
+        if( in_array($color, self::ROBES))
+            $this->color = $color;
+        else
+            throw new Error("This color doesn't exist");
         
         return $this;
     }
