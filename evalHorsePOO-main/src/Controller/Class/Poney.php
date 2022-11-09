@@ -18,7 +18,7 @@ class Poney extends Equine
     {
         $str = "Ce poney s'appelle : {$this->name}\n";
         $str .= $this->sexe == "male" ? "C'est un male" : "C'est une femelle";
-        $str = " de couleur {$this->color}\n";
+        $str .= " de couleur {$this->color}\n";
         $str .= "C'est le numéro : ".substr($this->id, -1)."\n";
         $str .= "Son identifiant complet est : $this->id}\n";
         if ($this->getAge() == 1)
