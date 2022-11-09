@@ -103,7 +103,6 @@ abstract class Equine extends Animal
             $this->color = $color;
         else
             throw new Error("This color doesn't exist");
-        
         return $this;
     }
     

@@ -1,5 +1,6 @@
 <?php
 namespace App\Controller\Class;
+use Error;
 
 class Horse extends Equine
 {
@@ -46,7 +47,10 @@ class Horse extends Equine
      */ 
     private function setAge($age): self
     {
-        $this->age = $age;
+        if( $age >= 0)
+            $this->age = $age;
+        else
+            throw new Error("Age can't be under 0.");
 
         return $this;
     }
