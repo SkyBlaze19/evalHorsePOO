@@ -17,6 +17,7 @@ class Poney extends Equine
     public function __toString(): string
     {
         $str = "Ce poney s'appelle : {$this->name}\n";
+        $str .= $this->sexe == "male" ? "C'est un male\n" : "C'est une femelle\n";
         $str .= "C'est le numéro : {substr($this->id, -1)}\n";
         $str .= "Son identifiant complet est : $this->id}\n";
         if ($this->getAge() == 1)
