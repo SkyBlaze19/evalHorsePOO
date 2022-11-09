@@ -17,7 +17,7 @@ abstract class Equine extends Animal
     //private Rider $Rider; //TODO
     
     // Constructeur
-    public function __construct($name, $sexe, string $id, string $color, int $water)
+    public function __construct($name, $sexe, string $color, int $water)
     {
         parent::__construct($name, $sexe);
         $this->setColor($color)
