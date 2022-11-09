@@ -28,7 +28,10 @@ echo "\n\n" . $EcurieBeaute;
 $georgeShetland = new Shetland(5, "Georges", "male", "Bai", 50);
 $camillePoney = new Poney(0, "Camille", "femelle", "Alzan", 70);
 $jeanHorse = new Horse(1, "Jean", "male", "Pie", 90);
-$patriciaShetland = new Shetland(1, "Patricia", "femelle", "Pie", 90);
+
+// Ici les cas ou les erreurs sont detectés (Décommenter ligne par ligne pour tester)
+//$patriciaShetland = new Shetland(1, "Patricia", "femelle", "Bonjour", 45);
+//$patriciaShetlandB = new Shetland(-7, "Patricia", "femelle", "Bai", 45);
 
 echo "\n\n".$georgeShetland;
 echo "\n\n".$camillePoney;
