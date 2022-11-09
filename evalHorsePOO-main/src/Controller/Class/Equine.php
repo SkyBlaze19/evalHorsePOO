@@ -8,6 +8,7 @@ abstract class Equine extends Animal
     protected string $id;
     protected string $color;
     protected int $water;
+    protected static $mesEquides = 0;
 
     private array $equides = [];
 
@@ -20,6 +21,8 @@ abstract class Equine extends Animal
         $this->setColor($color)
             ->setId($this->idGenerator())
             ->setWater($water);
+            self::$mesEquides++;
+
     }
 
     
@@ -102,7 +105,7 @@ abstract class Equine extends Animal
     
     public function idGenerator()
     {
-        return '000-' . substr($this->getName(), 0, 1) . "-" . substr($this->getColor(), 0, 1) . "-" . count($this->getEquines());
+        return '000-' . substr($this->getName(), 0, 1) . "-" . substr($this->getColor(), 0, 1) . "-" . self::$mesEquides;
     }
     
     /**
