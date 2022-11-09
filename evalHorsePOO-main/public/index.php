@@ -21,3 +21,9 @@ $EcurieBeaute = new Stable("Ecurie Beaute Fleury", "19", "Rue des ardennes", "14
 echo $MonHumainManager;
 echo "\n\n" . $Manager1;
 echo "\n\n" . $EcurieBeaute;
+
+$georgeShetland = new Shetland(5, "Georges", "male", "e", 50);
+$camillePoney = new Poney(0, "Camille", "femelle", "c", 70);
+$jeanHorse = new Horse(1, "Jean", "male", "a", 90);
+
+
