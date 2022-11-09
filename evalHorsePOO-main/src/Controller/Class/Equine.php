@@ -14,10 +14,11 @@ abstract class Equine extends Animal
     //private Rider $Rider; //TODO
     
     // Constructeur
-    public function __construct($name, $sexe, string $id, int $water)
+    public function __construct($name, $sexe, string $id, string $color, int $water)
     {
         parent::__construct($name, $sexe);
         $this->setId($this->idGenerator())
+            ->setColor($color)
             ->setWater($water);
     }
 
@@ -47,6 +48,7 @@ abstract class Equine extends Animal
     {
         //$str = "Cet equidé est un : {$this->getCategory()}\n";
         $str = "C'est le numéro : {substr($this->id, -1)}\n";
+        $str .= "Sa couleur est : {$this->color}\n";
         $str .= "Il a besoin de {$this->water} L d'eau\n";
         /* Dès que Rider sera créer (A ajuster si besoin)
         if($Rider != null)
