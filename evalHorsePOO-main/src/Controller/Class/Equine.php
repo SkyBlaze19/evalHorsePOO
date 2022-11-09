@@ -5,19 +5,20 @@ abstract class Equine extends Animal
 {
     // Propriétés
 
-    private string $id;
-    private string $color;
-    private int $water;
+    protected string $id;
+    protected string $color;
+    protected int $water;
 
     private array $equides = [];
 
     //private Rider $Rider; //TODO
     
     // Constructeur
-    public function __construct(string $name, string $id)
+    public function __construct(string $name, string $id, int $water)
     {
         parent::__construct($name);
-        $this->setId($this->idGenerator());
+        $this->setId($this->idGenerator())
+            ->setWater($water);
     }
 
     public function idGenerator()
