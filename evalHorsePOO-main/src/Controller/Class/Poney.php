@@ -11,7 +11,7 @@ class Poney extends Equine
     public function __construct(int $age, $name, $sexe, $id, $color, $water)
     {
         parent::__construct($name, $sexe, $id, $color, $water);
-        $this->setNom($age);
+        $this->setAge($age);
     }
 
     public function __toString(): string
@@ -28,26 +28,6 @@ class Poney extends Equine
             $str .= "Il a {$this->age} ans\n";
         $str .= "Il a besoin de {$this->water} litres d'eau.\n";
         return $str;
-    }
-
-    /**
-     * Get the value of nom
-     */ 
-    public function getNom(): string
-    {
-        return $this->nom;
-    }
-
-    /**
-     * Set the value of nom
-     *
-     * @return  self
-     */ 
-    private function setNom($nom): self
-    {
-        $this->nom = $nom;
-
-        return $this;
     }
 
     /**
